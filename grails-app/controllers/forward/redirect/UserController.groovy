@@ -60,7 +60,7 @@ class UserController {
 
         error = null
 
-        path << 'end emptyParams'
+        path << "end emptyParams from ${params.from}"
 
         model
     }

@@ -55,7 +55,8 @@ class UserController {
         def model = [
                 text: params.text,
                 path: path,
-                error: error
+                error: error,
+                from: params.from
         ]
 
         error = null

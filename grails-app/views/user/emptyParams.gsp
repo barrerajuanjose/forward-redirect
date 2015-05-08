@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<h1>${from}</h1>
 <h2>${text}</h2>
 
 <h2>Path</h2>

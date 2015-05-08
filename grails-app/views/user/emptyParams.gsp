@@ -15,7 +15,13 @@
 <h2>${text}</h2>
 
 <span>
-    ${error}
+    <p>${error}</p>
+</span>
+<h2>Path</h2>
+<span>
+<g:each in="${path}" var="position">
+    <p>${position}</p>
+</g:each>
 </span>
 </body>
 </html>

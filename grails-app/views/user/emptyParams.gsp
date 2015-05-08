@@ -12,16 +12,16 @@
 </head>
 
 <body>
-<h1>${from}</h1>
-<h2>${text}</h2>
+<h1>FROM: ${from}</h1>
+<h3>${text}</h3>
 
-<h2>Path</h2>
+<h3>Path</h3>
 <g:each in="${path}" var="position">
     <p>${position}</p>
 </g:each>
 
 <g:if test="${error}">
-    <h2>Error en index</h2>
+    <h3>Error en index</h3>
     <p>${error}</p>
 </g:if>
 

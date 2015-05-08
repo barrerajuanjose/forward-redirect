@@ -14,7 +14,7 @@ class UserController {
         path << 'index'
 
         if (!params.name) {
-            modelWithError.text = 'Pasa como parametro un name'
+            modelWithError.text = 'Falta parametro "name"'
             modelWithError.from = 'redirect'
             path << 'before redirect'
             redirect(action: 'emptyParams', params: modelWithError)
@@ -25,7 +25,7 @@ class UserController {
         }
 
         if (!params.color) {
-            modelWithError.text = 'Pasa como parametro un color'
+            modelWithError.text = 'Falta parametro "color"'
             modelWithError.from = 'forward'
             path << 'before forward'
             forward(action: 'emptyParams', params: modelWithError)

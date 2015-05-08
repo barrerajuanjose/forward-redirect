@@ -45,6 +45,8 @@ class UserController {
 
         path << 'end index'
 
+        model.path = path
+
         model
     }
 

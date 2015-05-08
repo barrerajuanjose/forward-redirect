@@ -14,5 +14,11 @@
 <body>
 <h2>${name}</h2>
 <h2>${color}</h2>
+
+<h2>Path</h2>
+<g:each in="${path}" var="position">
+    <p>${position}</p>
+</g:each>
+
 </body>
 </html>

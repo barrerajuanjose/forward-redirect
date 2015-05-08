@@ -14,13 +14,15 @@
 <body>
 <h2>${text}</h2>
 
-<h2>Error en index</h2>
-<p>${error}</p>
-
 <h2>Path</h2>
 <g:each in="${path}" var="position">
     <p>${position}</p>
 </g:each>
+
+<g:if test="${error}">
+    <h2>Error en index</h2>
+    <p>${error}</p>
+</g:if>
 
 </body>
 </html>

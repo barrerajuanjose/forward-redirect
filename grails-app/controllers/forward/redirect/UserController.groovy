@@ -41,10 +41,13 @@ class UserController {
             error = e
         }
 
+        path << 'end index'
+
         model
     }
 
     def emptyParams() {
+        path << 'emptyParams'
         def model = [
                 text: params.text,
                 path: path,
@@ -52,6 +55,8 @@ class UserController {
         ]
 
         error = null
+
+        path << 'end emptyParams'
 
         model
     }
